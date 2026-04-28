@@ -1,9 +1,3 @@
-# Custom Project Folders (jangan commit)
-assets/
-css/
-js/
-page/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
