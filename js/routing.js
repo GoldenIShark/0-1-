@@ -15,25 +15,25 @@ function animateText(selector) {
 const pages = {
     home: `
         <div class="hero">
-            <h1 class="animated-text">Welcome to Our Website</h1>
+            <h1>Welcome to Our Website</h1>
             <p>We are a company that provides excellent services.</p>
         </div>
     `,
     about: `
         <div class="hero">
-            <h1 class="animated-text">About Us</h1>
+            <h1>About Us</h1>
             <p>Learn more about our company and mission.</p>
         </div>
     `,
     services: `
         <div class="hero">
-            <h1 class="animated-text">Our Services</h1>
+            <h1>Our Services</h1>
             <p>Discover the range of services we offer.</p>
         </div>
     `,
     contact: `
         <div class="hero">
-            <h1 class="animated-text">Contact Us</h1>
+            <h1>Contact Us</h1>
             <p>Get in touch with us for any inquiries.</p>
         </div>
     `
