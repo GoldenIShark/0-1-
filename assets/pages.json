@@ -14,7 +14,7 @@
     },
     "profile": {
       "title": "Profile",
-      "content": "<halaman-profile><img-profile src=\"assets/images/profile.jpg\" alt=\"Profile\"><keterangan-profile><h1>John Doe</h1><p>Web Developer & Designer</p></keterangan-profile></halaman-profile>"
+      "content": "<halaman-profile><img-profile src=\"https://goldenishark.github.io/0-1-/assets/img/profile.jpg\" alt=\"Profile\"><keterangan-profile><h1>John Doe</h1><p>Web Developer & Designer</p></keterangan-profile></halaman-profile>"
     }
   }
 }
