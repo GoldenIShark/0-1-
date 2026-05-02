@@ -1,22 +1,8 @@
-// Fungsi untuk membuat animasi text per huruf
-function animateText(selector) {
-    const elements = document.querySelectorAll(selector);
-    elements.forEach(element => {
-        const text = element.textContent;
-        const animatedText = text
-            .split('')
-            .map((char, index) => `<span class="char" style="animation-delay: ${index * 0.08}s;">${char}</span>`)
-            .join('');
-        element.innerHTML = animatedText;
-    });
-}
-
 // Definisi halaman
 const pages = {
     home: `
         <div class="hero">
-            <h1>Welcome to Our Website</h1>
-            <p>We are a company that provides excellent services.</p>
+            <h1>Welcome</h1>
         </div>
     `,
     about: `
@@ -31,11 +17,14 @@ const pages = {
             <p>Discover the range of services we offer.</p>
         </div>
     `,
-    contact: `
-        <div class="hero">
-            <h1>Contact Us</h1>
-            <p>Get in touch with us for any inquiries.</p>
-        </div>
+    profile: `
+        <halaman-profile>
+            <img-profile src="assets/images/profile.jpg" alt="Profile">
+            <keterangan-profile>
+                <h1>John Doe</h1>
+                <p>Web Developer & Designer</p>
+            </keterangan-profile>
+        </halaman-profile>
     `
 };
 
@@ -44,9 +33,6 @@ function renderPage(page) {
     const app = document.getElementById('app');
     app.innerHTML = pages[page] || pages.home;
     document.title = `${page.charAt(0).toUpperCase() + page.slice(1)} - My Website`;
-    
-    // Jalankan animasi text setelah render
-    animateText('.animated-text');
 }
 
 
