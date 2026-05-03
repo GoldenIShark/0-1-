@@ -1,50 +1,43 @@
-// Definisi halaman
-const pages = {
-    home: `
-        <div class="hero">
-            <h1>Welcome</h1>
-        </div>
-    `,
-    about: `
-        <div class="hero">
-            <h1>About Us</h1>
-            <p>Learn more about our company and mission.</p>
-        </div>
-    `,
-    services: `
-        <div class="hero">
-            <h1>Our Services</h1>
-            <p>Discover the range of services we offer.</p>
-        </div>
-    `,
-    profile: `
-        <halaman-profile>
-            <img-profile src="assets/images/profile.jpg" alt="Profile">
-            <keterangan-profile>
-                <h1>John Doe</h1>
-                <p>Web Developer & Designer</p>
-            </keterangan-profile>
-        </halaman-profile>
-    `
-};
+// Ambil elemen app
+const app = document.getElementById('app');
 
-// Fungsi untuk render halaman
-function renderPage(page) {
-    const app = document.getElementById('app');
-    app.innerHTML = pages[page] || pages.home;
-    document.title = `${page.charAt(0).toUpperCase() + page.slice(1)} - My Website`;
+// Load halaman dari file .txt
+async function loadPage(page) {
+    try {
+        const response = await fetch(`https://goldenishark.github.io/0-1-/assets/txt/${page}.txt`);
+
+        // Kalau file tidak ditemukan
+        if (!response.ok) {
+            throw new Error('Page not found');
+        }
+
+        const html = await response.text();
+
+        // Tempel isi HTML ke app
+        app.innerHTML = html;
+
+        // Set title (biar rapi)
+        document.title = page.charAt(0).toUpperCase() + page.slice(1);
+
+    } catch (error) {
+        app.innerHTML = `
+            <div>
+                <h1>404</h1>
+                <p>Halaman "${page}" tidak ditemukan</p>
+            </div>
+        `;
+        document.title = 'Error';
+    }
 }
 
-
-
-// Handle hash perubahan
+// Handle routing
 function handleRouting() {
-    const hash = window.location.hash.substring(1) || 'home';
-    renderPage(hash);
+    const hash = window.location.hash.substring(1);
+    const page = hash || 'home'; // default home
+
+    loadPage(page);
 }
 
-// Listen ketika hash berubah
+// Event listener
 window.addEventListener('hashchange', handleRouting);
-
-// Initial load
-handleRouting();
+window.addEventListener('load', handleRouting);
