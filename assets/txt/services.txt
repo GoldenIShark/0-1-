@@ -1,0 +1,42 @@
+<div class="hero">
+    <h1>Our Services</h1>
+    <p>Discover the range of services we offer to help your business succeed.</p>
+</div>
+
+<div class="services-container">
+    <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h3>Web Development</h3>
+        <p>Custom web applications and websites built with modern technologies. Responsive design, fast performance, and user-friendly interfaces.</p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <p>Beautiful and intuitive user interfaces designed for optimal user experience. We create designs that engage and convert.</p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Mobile Apps</h3>
+        <p>Native and cross-platform mobile applications. iOS and Android development with seamless performance and great user experience.</p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <h3>SEO Optimization</h3>
+        <p>Improve your online visibility with our SEO services. Keyword research, on-page optimization, and link building strategies.</p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">📊</div>
+        <h3>Analytics & Reporting</h3>
+        <p>Data-driven insights to track your business performance. Real-time analytics, custom dashboards, and detailed reports.</p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">🔒</div>
+        <h3>Security Consulting</h3>
+        <p>Protect your business with comprehensive security solutions. Vulnerability assessments, penetration testing, and security audits.</p>
+    </div>
+</div>
