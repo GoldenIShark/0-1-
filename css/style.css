@@ -298,6 +298,51 @@ p {
     margin-right: auto;
 }
 
+/* Services Page Styling */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(184, 255, 209, 0.3);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: #b8ffd1;
+    box-shadow: 0 15px 40px rgba(184, 255, 209, 0.2);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #b8ffd1;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.service-card p {
+    color: #e0e0e0;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
 .profile-bio {
     font-size: 1.1rem;
     color: #e0e0e0;
