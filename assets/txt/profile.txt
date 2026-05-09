@@ -2,7 +2,7 @@
         <div class="profile-card">
             <div class="profile-background" id="profileBg"></div>
             <div class="profile-content">
-                <img id="profileImage" src="assets/img/profile.jpg" alt="Profile Picture" class="profile-image">
+                <img id="profileImage" src="" alt="Profile Picture" class="profile-image">
                 <h2 id="userName" class="profile-name">John Doe</h2>
                 <p id="userTitle" class="profile-title">Web Developer</p>
                 <div class="profile-info">
